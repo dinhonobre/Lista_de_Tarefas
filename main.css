@@ -48,6 +48,22 @@ h1 {
     background-color: #4cae4c;
 }
 
+#filters {
+    margin: 20px 0;
+}
+
+#filters button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#filters button:hover {
+    background-color: #f0f0f0;
+}
+
 #task-list {
     list-style: none;
     padding: 0;
@@ -63,13 +79,27 @@ h1 {
     align-items: center;
 }
 
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
 #task-list li button {
     background: none;
     border: none;
     color: #d9534f;
     cursor: pointer;
+    margin-left: 5px;
 }
 
-#task-list li button:hover {
+#task-list li button.edit {
+    color: #5bc0de;
+}
+
+#task-list li button.edit:hover {
+    color: #31b0d5;
+}
+
+#task-list li button.delete:hover {
     color: #c9302c;
 }

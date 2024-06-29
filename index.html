@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
+    <title>Lista de Tarefas Avançada</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -13,6 +13,11 @@
             <input type="text" id="new-task" placeholder="Adicionar nova tarefa">
             <button type="submit">Adicionar</button>
         </form>
+        <div id="filters">
+            <button data-filter="all">Todas</button>
+            <button data-filter="completed">Concluídas</button>
+            <button data-filter="pending">Pendentes</button>
+        </div>
         <ul id="task-list"></ul>
     </div>
     <script src="./main.js"></script>
